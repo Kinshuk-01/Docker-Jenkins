@@ -5,6 +5,7 @@ WORKDIR /app
 COPY pom.xml .
 COPY . .
 
+# Adding a comment just to make a change
 RUN mvn clean package
 
 FROM openjdk:17
